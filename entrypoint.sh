@@ -28,8 +28,4 @@ EOL
 
 wg-quick up /etc/wireguard/wg0.conf
 
-# Inifinite sleep
-# sleep infinity &
-# wait $!
-
 nginx -g "daemon off;"
