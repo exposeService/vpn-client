@@ -6,7 +6,6 @@ services:
      - NET_ADMIN
     volumes:
      - ./wireguard:/etc/wireguard
-     - ./entrypoint.sh:/entrypoint.sh
     environment:
      - PORT=3004
      - SERVER=web:80
