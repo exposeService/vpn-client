@@ -4,9 +4,7 @@ services:
     build: .
     cap_add:
      - NET_ADMIN
-       # - SYS_MODULE
     volumes:
-      # - /dev/net/tun:/dev/net/tun
      - ./wireguard:/etc/wireguard
      - ./entrypoint.sh:/entrypoint.sh
      - ./example/s1:/usr/share/nginx/html
@@ -17,8 +15,6 @@ services:
      - SERVER=s1:80
     ports:
      - 51820:51820/udp
-    # Uncomment the following line when 'AllowedIPs' is '0.0.0.0/0'
-    # privileged: true
     restart: always
 
   s1:
