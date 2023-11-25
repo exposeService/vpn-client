@@ -7,14 +7,11 @@ services:
     volumes:
      - ./wireguard:/etc/wireguard
      - ./entrypoint.sh:/entrypoint.sh
-     - ./example/s1:/usr/share/nginx/html
     environment:
      - WG_COLOR_MODE=always
      - LOG_LEVEL=info
      - PORT=3004
      - SERVER=s1:80
-    ports:
-     - 51820:51820/udp
     restart: always
 
   s1:
@@ -22,5 +19,3 @@ services:
     container_name: s1
     volumes:
       - ./example/s1:/usr/share/nginx/html
-    ports:
-      - 0.0.0.0:3001:80
