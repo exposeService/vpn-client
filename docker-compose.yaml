@@ -8,8 +8,6 @@ services:
      - ./wireguard:/etc/wireguard
      - ./entrypoint.sh:/entrypoint.sh
     environment:
-     - WG_COLOR_MODE=always
-     - LOG_LEVEL=info
      - PORT=3004
      - SERVER=s1:80
     restart: always
