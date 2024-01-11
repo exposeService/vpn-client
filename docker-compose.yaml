@@ -4,8 +4,6 @@ services:
     build: .
     cap_add:
      - NET_ADMIN
-#    volumes:
-#     - ./wireguard:/etc/wireguard
     environment:
      - PORT=3004
      - SERVER=web:80
