@@ -5,9 +5,8 @@ services:
     cap_add:
      - NET_ADMIN
     environment:
-     - PORT=3004
      - SERVER=web:80
-     - WG_ENDPOINT=192.168.121.248:51820
+     - WG_ENDPOINT=192.168.121.39:51820
      - WG_PRIVATE=+MYPa0mJ7PSWR2lxl0gN6uQNmLPZc2kGXnXoUVtnTmk=
      - WG_PUBLIC=CpC/jovtd6WcZM9tD51LIT4M9hf/ey9FlD3jrr/Cow8=
     restart: always

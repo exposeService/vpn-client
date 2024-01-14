@@ -20,7 +20,7 @@ events {
 
 stream {
     server {
-        listen ${PORT};
+        listen 10000;
         proxy_pass ${SERVER};
     }
 }
